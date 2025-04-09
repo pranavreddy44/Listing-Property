@@ -20,9 +20,18 @@ async function main() {
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
+app.use(express.urlencoded({ extended: true }));
 
+//Index Route
 app.get("/", (req, res) => {
   res.send("Hi I am root");
+});
+
+//Show Route
+app.get("/listings/:id", async (req, res) => {
+  let { id } = req.params;
+  const listing = await Listing.findById(id);
+  res.render("./listings/show.ejs", { listing });
 });
 
 app.get("/listings", async (req, res) => {
