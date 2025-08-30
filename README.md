@@ -9,7 +9,7 @@
 ![Passport](https://img.shields.io/badge/Passport-Auth-34E27A?logo=passport&logoColor=white)
 ![Multer](https://img.shields.io/badge/Multer-Upload-FF6C37?logo=multer&logoColor=white)
 
-Live site: [Deploy your application URL here]
+Live site: https://listing-property.onrender.com/
 
 WanderLust is a full‑stack web application for property listings and rentals, featuring user authentication, image uploads, reviews, and a modern responsive interface. Users can browse properties, create listings, leave reviews, and manage their own listings with full CRUD operations.
 
